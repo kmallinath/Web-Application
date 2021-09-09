@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Art</title>
+ 
+  <link rel="stylesheet" type="text/css" href="css/art.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+  <a href="index.html" >Home</a>
+  
+  
+  <div class="dropdown">
+    <button class="dropbtn">Contests 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="art.html" class="active">Art-By Hand</a>
+      <a href="singing.html" >Singing</a>
+      <a href="story.html">Story/Quotes</a>
+    </div>
+  </div> 
+  <a href="tournaments.html">Tournaments</a>
+  <a href="help.html">Help</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+  <header>
+  
+  <h1><a href="index.html"><img src="images/syt.jpg" alt="logo" width="80"></a>Art-By Hand</h1>
+</header>
+  <br>
+  <STRONG>INSTRUCTIONS:</STRONG>
+  <br>
+  <ul>
+    <li>Img format shold be uploaded(JPEG,JPG).</li>
+    <li>Write your name on art(art by-xyz)</li>
+    <li>Email should be valid-(full email address-xyz@gmail.com)</li>
+    
+  </ul>
+  <br>
+  <form action="uart.php" method="post" enctype="multipart/form-data">
+  <div>
+    <center>
+  <label for="my_upload" >Select the file to upload:</label>
+  <input id="my_upload" name="my_upload" type="file" required ><br><br>
+  <label for="1" >Email:</label>
+  <input type="text" name="textdata" id="1" required><br><br>
+  <input type="submit" name="submit" class="submit" >
+  </div>
+  
+  
+  </form>
+
+</center>
+</body>
+</html>
